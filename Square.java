@@ -6,7 +6,7 @@ import java.util.List;
  * If it's the correct target, an appropriate sound will play. If it's not the 
  * correct target, a different sound will play.
  * 
- * @author example@email.uscb.edu
+ * @author Brian Canada, PhD (bcanada@uscb.edu)
  * @version 0.1
  */
 public class Square extends Actor

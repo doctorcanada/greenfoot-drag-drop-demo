@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Square
-comment0.text=\n\ This\ object\ can\ be\ dragged\ and\ dropped\ onto\ a\ Target,\ and\ "snaps"\ into\ place.\ \n\ If\ it's\ the\ correct\ target,\ an\ appropriate\ sound\ will\ play.\ If\ it's\ not\ the\ \n\ correct\ target,\ a\ different\ sound\ will\ play.\n\ \n\ @author\ example@email.uscb.edu\n\ @version\ 0.1\n
+comment0.text=\n\ This\ object\ can\ be\ dragged\ and\ dropped\ onto\ a\ Target,\ and\ "snaps"\ into\ place.\ \n\ If\ it's\ the\ correct\ target,\ an\ appropriate\ sound\ will\ play.\ If\ it's\ not\ the\ \n\ correct\ target,\ a\ different\ sound\ will\ play.\n\ \n\ @author\ Brian\ Canada,\ PhD\ (bcanada@uscb.edu)\n\ @version\ 0.1\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Square\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

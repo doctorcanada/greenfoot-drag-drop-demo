@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SquareWorld
-comment0.text=\n\ In\ this\ scenario,\ the\ player\ can\ drop\ a\ Square\ onto\ one\ of\ two\ possible\ Targets.\n\ \n\ @author\ example@email.uscb.edu\n\ @version\ 0.1\n
+comment0.text=\n\ In\ this\ scenario,\ the\ player\ can\ drop\ a\ Square\ onto\ one\ of\ two\ possible\ Targets.\n\ \n\ @author\ Brian\ Canada,\ PhD\ (bcanada@uscb.edu)\n\ @version\ 0.1\n
 comment1.params=
 comment1.target=SquareWorld()
 comment1.text=\n\ Create\ the\ SquareWorld.\ Our\ world\ has\ a\ size\ of\ 500x500\ cells,\ \n\ where\ every\ cell\ is\ just\ 1\ pixel.\ Also,\ initialize\ instance\ variables,\n\ prepare\ the\ "scoreboard",\ and\ place\ object\ sprites\ in\ the\ world.\n

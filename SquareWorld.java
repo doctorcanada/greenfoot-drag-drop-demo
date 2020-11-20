@@ -3,7 +3,7 @@ import greenfoot.*;  // (Actor, World, Greenfoot, GreenfootImage)
 /**
  * In this scenario, the player can drop a Square onto one of two possible Targets.
  * 
- * @author example@email.uscb.edu
+ * @author Brian Canada, PhD (bcanada@uscb.edu)
  * @version 0.1
  */
 public class SquareWorld extends World

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Note that this class has no `act()` method, since it's not really necessary
  * for this particular example (it's not like the Target is moving or anything)
  * 
- * @author example@email.uscb.edu
+ * @author Brian Canada, PhD (bcanada@uscb.edu)
  * @version 0.1
  */
 public class Target extends Actor
