@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=SquareWorld
+comment0.text=\n\ In\ this\ scenario,\ the\ player\ can\ drop\ a\ Square\ onto\ one\ of\ two\ possible\ Targets.\n\ \n\ @author\ example@email.uscb.edu\n\ @version\ 0.1\n
+comment1.params=
+comment1.target=SquareWorld()
+comment1.text=\n\ Create\ the\ SquareWorld.\ Our\ world\ has\ a\ size\ of\ 500x500\ cells,\ \n\ where\ every\ cell\ is\ just\ 1\ pixel.\ Also,\ initialize\ instance\ variables,\n\ prepare\ the\ "scoreboard",\ and\ place\ object\ sprites\ in\ the\ world.\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\n
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=int\ getCorrectPlacementCount()
+comment5.params=correctPlacementCount
+comment5.target=void\ setCorrectPlacementCount(int)
+comment6.params=
+comment6.target=int\ getIncorrectPlacementCount()
+comment7.params=incorrectPlacementCount
+comment7.target=void\ setIncorrectPlacementCount(int)
+numComments=8
