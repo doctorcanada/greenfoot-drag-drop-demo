@@ -44,12 +44,13 @@ public class Square extends Actor
      *    within a certain distance (the "target detection threshold")
      * 2) Any targets "in range" will be stored in a List (a data structure
      *    that is similar to an array but can grow and shrink in size as needed).
-     *    However, if there are no targets in range, then nothing will be assigned
-     *    to the List's reference variable (i.e., it will have a "null reference" and
-     *    therefore doesn't "point" to anything). 
-     * 3) Assuming that the "list of targets" is NOT null (that is, there ARE targets in 
-     *    range), then we will use an *enhanced for loop* to iterate through all the 
-     *    target references stored in the list. 
+     *    However, if there are no targets in range, then the List will be empty
+     *    (the List itself won't be `null`, but the List won't contain any objects)
+     * 3) We will then use an *enhanced for loop* to iterate through all the 
+     *    target references stored in the list, but we must first check to make
+     *    sure that there is at least one Target object in the list (i.e., we
+     *    check to see if the reference variable `currentTarget` actually refers
+     *    to something -- that's why we check to see if `currentTarget` is NOT null)
      * 4) The dropped Square will "snap" into place so that it is cleanly aligned
      *    with the Target that it overlaps
      * 5) If you have dropped the Square onto the *correct* Target, then a confirmation
@@ -90,9 +91,9 @@ public class Square extends Actor
                         Greenfoot.playSound( "au.wav" );
                     } // end innermost if/else
                     
-                    // if a collision with a target is detected (and handled),
-                    // then we can exit the method entirely
-                    return; // `break` works too if you just want to break out of the containing loop
+                    // if a collision with a target is detected (and handled), then
+                    // we can exit the method entirely by using a simple `return` statement
+                    return; // `break` works too if you just want to break out of the containing `for` loop
                 } // end inner if
             } // end enhanced for loop   
 
