@@ -12,7 +12,7 @@ import java.util.List;
 public class Square extends Actor
 {
     /* FIELD(S) */
-    final int TARGET_DETECTION_THRESHOLD = 25;
+    private final int TARGET_DETECTION_THRESHOLD = 25;
     
     /* CONSTRUCTOR(S) */
     

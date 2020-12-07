@@ -51,28 +51,49 @@ public class SquareWorld extends World
         /* Square should be in foreground, Target should be in background */
         setPaintOrder( Square.class, Target.class );
     } // end method prepare
-  
+    
+    /**
+     * Allows the SquareWorld to behave like an Actor class,
+     * so that certain things can be updated during each cycle 
+     * through the game loop
+     */
     public void act()
     {
         showText("Correct Placements: " + correctPlacementCount, 250, 50 );
         showText("Incorrect Placements: " + incorrectPlacementCount, 250, 75 );
     } // end method act
     
+    /**
+     * Allows an object of another class to access ("get") the
+     * value of `correctPlacementCount`, if necessary
+     */
     public int getCorrectPlacementCount()
     {
         return correctPlacementCount;
     } // end method getCorrectPlacementCount
     
+    /**
+     * Allows an object of another class to modify ("set") the
+     * value of `correctPlacementCount`, if necessary
+     */
     public void setCorrectPlacementCount( int correctPlacementCount )
     {
         this.correctPlacementCount = correctPlacementCount;
     } // end method setCorrectPlacementCount
     
+    /**
+     * Allows an object of another class to access ("get") the
+     * value of `incorrectPlacementCount`, if necessary
+     */
     public int getIncorrectPlacementCount()
     {
         return incorrectPlacementCount;
     } // end method getIncorrectPlacementCount
     
+    /**
+     * Allows an object of another class to modify ("set") the
+     * value of `incorrectPlacementCount`, if necessary
+     */
     public void setIncorrectPlacementCount( int incorrectPlacementCount )
     {
         this.incorrectPlacementCount = incorrectPlacementCount;
