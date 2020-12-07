@@ -64,14 +64,19 @@ public class Square extends Actor
             List<Target> possibleTargetsInRange 
                 = getObjectsInRange( TARGET_DETECTION_THRESHOLD, Target.class );
             
-            if ( possibleTargetsInRange != null )
+            // Use an enhanced for loop (a.k.a. a "for-each" loop) to iterate
+            // over all of the possible Target objects that are in range
+            for ( Target currentTarget : possibleTargetsInRange ) 
             {
-                for ( Target currentTarget : possibleTargetsInRange ) 
+                // if there are no Target objects in range, then currentTarget will be null
+                // (i.e., currentTarget doesn't *refer* to anything), so the condition used
+                // in the if-statement will prevent a NullPointerException 
+                if ( currentTarget != null ) 
                 {
                     setLocation( currentTarget.getX(), currentTarget.getY() );
                     
                     SquareWorld referenceToSquareWorld = (SquareWorld)getWorld();
-
+    
                     if ( currentTarget.isCorrectTarget() )
                     {
                         referenceToSquareWorld.setCorrectPlacementCount(
@@ -84,9 +89,13 @@ public class Square extends Actor
                            referenceToSquareWorld.getIncorrectPlacementCount() + 1 );
                         Greenfoot.playSound( "au.wav" );
                     } // end innermost if/else
-                } // end enhanced for loop   
-            } // end inner if
-            
+                    
+                    // if a collision with a target is detected (and handled),
+                    // then we can exit the method entirely
+                    return; // `break` works too if you just want to break out of the containing loop
+                } // end inner if
+            } // end enhanced for loop   
+
         } // end outer if
     } // end method checkIfDroppedOntoTarget
 } // end class Square
